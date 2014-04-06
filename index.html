@@ -1,1 +1,537 @@
-Hello World
+<!--http://lifehacker.com/5930800/grab-over-80-free-ebooks-from-microsoft-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://balupton.github.com/jquery-scrollto/scripts/jquery.scrollto.js"></script>
+<title>Evans</title>
+
+<style>
+body {
+	background: #fff;
+	color: #666;
+	font: 85%/140% Arial, Helvetica, sans-serif;
+	width: 1000px;
+	max-width: 96%;
+	margin: 0 auto;
+}
+a {
+	color: #69C;
+	text-decoration: none;
+}
+a:hover {
+	color: #F60;
+}
+h1 {
+	font: 1.7em;
+	line-height: 110%;
+	color: #000;
+}
+p {
+	margin: 0 0 20px;
+}
+
+/* reset webkit search input browser style */
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; /* remove the search and cancel icon */
+}
+
+/* search input field */
+input[type=search] {
+	background: #ededed url(http://cdn3.iconfinder.com/data/icons/woothemesiconset/32/search.png) no-repeat 5px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 100px;
+	background-color: #fff;
+	border-color: #6dcff6;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+/* placeholder */
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* demo B */
+#demo-b input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-b input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-b input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-b input:-moz-placeholder {
+	color: transparent;
+}
+#demo-b input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+img{
+	border: solid 3px #ccc;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	border-radius: 0.3em;
+}
+
+#header{
+  width: 100px;
+  position: fixed;
+  padding-top: 50px;
+  text-align: left;
+  padding-right:50px;
+  z-index: 20; 
+}
+
+ #header li{
+    list-style: none outside none;
+	margin-left: -35px;
+ }
+	
+#main{
+ width: 600px;
+ margin-left: 150px;
+}
+
+#right{
+ padding-top: 44px;
+ width: 200px;
+ margin-left: 50px;
+ float: right;
+}
+
+#right li{
+    list-style: none outside none;
+	margin-left: -35px;
+ }
+
+ 
+ .details{
+    display: none;
+ }
+ 
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){ 
+     $('#theRestore').click(function(event){
+         event.preventDefault();	 
+	 $('#restore').ScrollTo({
+		duration: 2000,
+		//durationMode: 'all'
+	});
+	
+  });
+  
+    $('#theBooks').click(function(event){
+         event.preventDefault();	 
+	 $('#books').ScrollTo({
+		duration: 2000,
+		//durationMode: 'all'
+	});
+	
+  });
+
+   $('#theContact').click(function(event){
+         event.preventDefault();	 
+	 $('#contact').ScrollTo({
+		duration: 2000,
+		//durationMode: 'all'
+	});
+	
+  });
+  
+  $('.details_images').click(function(){
+       $('.details').hide();
+	   var theClicked = $(this).attr('id');
+	   $('#details_'+theClicked).slideDown();
+	   
+  });
+});
+
+
+</script>
+</head>
+
+<body>
+
+<div id="header">
+  <img src="http://1.gravatar.com/avatar/50c43985002ebdc3a1e2f1ba0e2a98b2?s=60&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&r=G" width="80" height="90"><br />
+  <ul>
+    
+	<li><a href="http://www.jroller.com/evans/page/about">About</a>  </li>
+        <li><a href="#" id="theRestore">Projects</a> </li>
+	<li><a href="http://jroller.com/evans">Blog</a>  </li>	
+	<li><a href="#" id="theBooks">Books</a>  </li>	
+	
+	<li><a href="https://github.com/evansa">Github</a>  </li>	
+        <li><a href="#" id="theContact">Contact</a>  </li>
+	</ul>
+	<form>
+	<input type="search" placeholder="Search">
+</form>
+<br />
+<a href="http://twitter.com/onyxtic"><img style="border:0px;" src="http://www.marketlayerdata.co.uk/i/template/twitter.png"></a> <a href="http://www.jroller.com/evans/feed/entries/rss"><img style="border:0px;" src="http://www.marketlayerdata.co.uk/i/template/rss.png"></a> <br />
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-6252259428036004";
+google_ad_host = "pub-1556223355139109";
+/* 120x90, created 3/21/08 */
+/* google_ad_slot = "8704406218";*/
+google_ad_width = 120;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 
+
+<br /><br />
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-6252259428036004";
+google_ad_host = "pub-1556223355139109";
+/* 120x90, created 3/21/08 */
+/* google_ad_slot = "8704406218";*/
+google_ad_width = 120;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+<div id="right">
+
+<b>Blogroll</b>
+	<ul>
+    <li><a href="http://www.amazon.com/Programming-3rd-Stephen-G-Kochan/dp/0672326663?tag=3322-20" id="theRestore">Programming in C</a> </li>
+	<li><a href="http://www.amazon.com/Complete-Microsoft-Programming-Steve-McConnell/dp/1556154844?tag=3322-20">Code Complete 2</a>  </li>
+	<li><a href="http://www.amazon.com/Learning-UNIX-Operating-System-Fifth/dp/0596002610?tag=3322-20">The Unix Operating System</a>  </li>	
+	<li><a href="http://www.amazon.com/First-Design-Patterns-Elisabeth-Freeman/dp/0596007124?tag=3322-20">Head First Design Patterns</a>  </li>
+        <li><a href="http://leicestersquarehotels.blogspot.com">Leicester Square Hotels</a>  </li>
+        <li><a href="http://www.amazon.com/Professional-Android-Application-Development-Programmer/dp/0470565527?tag=3322-20">Professional Android 2 Application Development</a></li>
+	</ul>
+</div>
+
+<div id="main">
+<h1>About Evans</h1>
+
+<input type="hidden" name="IL_IN_TAG" value="2"/>
+<!--<p>Template by <a href="http://twitter.com/marketlayer">Evans A</a>, <a href="http://marketlayer.com">Marketlayer Limited</a> (<a href="http://marketlayer.com/aboutus.php">related article</a>)</p>-->
+
+<!--
+<h3>Demo A</h3>
+<form>
+	<input type="search" placeholder="Search">
+</form>
+
+<h3>Demo B</h3>
+
+<form id="demo-b">
+	<input type="search" placeholder="Search">
+</form> -->
+<p>
+Not used to writing about myself, so I will try my best to write something but will keep updating as time goes on. Anyway, my name is Evans - my favourite language is Python although most of my work is in PHP these days. My past experience involved software development mainly with Java for a number of years. But now all my work is done in PHP, Javascript, jQuery and HTML5. I still manage to do quite a bit of Python and Shell scripting on the side. It's fun because I get to use and mix all these awesome technologies.</p>
+<p>I use Python for everything. I use Python to solve most problems because of it's flexibility and clean design. You can quickly and easily knock up something that works without pulling your hair out.</p>
+
+<p>If you use a computer connected to the Internet, you are likely using software I wrote or contributed to</p>
+
+<p>Outside of my day job and all technical stuff, I'm a BIG fan of <a href="http://www.amazon.com/s/ref=sr_kk_1?rh=i%3Aaps%2Ck%3Aformula+1&keywords=formula+1&ie=UTF8&qid=1359284939&tag=3322-20">F1 - Formula One</a>, continuing online education, and making (usually failed) attempts at humour.</p>
+
+<p> Speaking of Formula One - I've been a Vodafone McLaren Mercedes - or simply, McLaren supporter for as long as I can remember. Being a true supporter means that we win together and fail together. In the past I was known to wear the famous Rocket Red shirt following a successful weekend. </p> 
+
+<p>I can copy the code from the example ( that's what I did!) but, as Luca said, code and pre are more elegant, provide a better user-experience (copy/paste, zoom, etc) and, you know, images should only be used for images (yeah, call me a semantics nazi if you want :) )
+</p>
+
+<p>
+Again, amazing work and amazing site.
+</p>
+<p>
+Some years ago, I was working on my final year project, and at some point I had to develop a Multiple choice Question Module and give the user the option to export their results in PDF Format. After some online searches, I stumbled upon a kick ass PDF Class to generate PDF Files Dynamically. I found it so amazing that I decided to put up a small tutorial how to generate a pdf file using PHP. I have created a simple form where a user enters his details and enters his Exam results and after submission the user can download his result in a nice PDF File.
+</p>
+<div id="restore">
+<a href="#" name="restore"></a>
+</div>
+<h1>Projects</h1>
+<p>
+Over the years, I designed and developed a number of software applications. Some of them never saw the light of day, while others went on to make it big time - like a small Make Money Online spider app which was developed in a weekend and became a hit. Inspirations for a software usually comes from solving a problem or improving on what someone has already done. Coming up with a very unique idea for a software is very hard, just like every other things around these days... everyone is changing or modifying something that has already been done.
+<p>
+<p>
+But recently, a few of my software have been making big hits. One of them is the humble Twitter App I developed late last year. When I designed it I aimed for it to do a very basic and still was useful and powerful. It covered the features that Twitter did not have or provided at that time. So this gave me not only the opportunity to try out the API, but also allowed me to mess about with Python, XML, JSON and a whole lot of MySQL designs. It was a fun experience that I really enjoyed.
+</p>
+
+<p>
+As with most of my other software, I designed it on the train back home from work. I got home that Friday night and went straight to my computer. By mid-night, I had a working prototype. It was grabbing an RSS from Amazon, parsing it - using a great deal of <a href="http://en.wikipedia.org/wiki/Regular_expression">Regular Expression</a> and tweeting the result. This was fun because I could now sit back and watch the beast take on a life of it's own. 
+</p>
+
+<p>Over the weekend, I added all the features I wanted and polished the whole thing. As I had a dedicated Ubuntu Server, I was able to migrate the code over and had it running auto-pilot. It was fun. This continued for almost a year until late 2010 when Twitter decided to stop supporting basic API. A few months later, I finally got around to updating the code to use the new OAuth API. I also added the ability to tweet my RSS feed, SMS and Email notifications; which meant that I didn't have to rely on Twitterfeed any more. I could control my destiny as it were :)</p>
+
+Fast forward a year later - the twitter application has become  so stable that many prominent companies and organisations now use it. The licensing terms are very liberal - so anyone can grab the code, modify as they see fit and even brand it. One thing I ask though is that you leave the copyright notice - I don't even want you linking back to my site - but I won't mind if you did.
+</p>
+<p>
+
+The only thing that will cost you is the subscription to use the SMS notification feature. Not only did I invest a great deal of time into the application API, I also invested some amount of cash. This made it possible to use the real-time notifications. Because of the way I designed the application, you can pick and choose which of the methods to call once you've initialised the object. But if however, you need help with any of the features, I can always help you to get it running.
+</p>
+<!--
+<p>and Now you have the plug-in, you need to include the plug-in and base CSS in the page. As Basic jQuery Slider is a jQuery plug-in (I hope you already worked that out), you'll need to make sure you've included the jQuery library before you include the plug-in.
+</p>
+<p>
+You also need to include the basic styles - you can either include the CSS file provided, or simply copy the styles in that file across in to your main stylesheet.
+</p>
+
+<p>
+That's it! Basic jQuery Slider is now ready for you to customise and theme to your hearts content. If you have any questions, head over to the project page on Github and ask away!
+</p>
+
+<p>
+Going on some crude directions from our new parents we were kicking pebbles along dark, empty streets of late night Habana.  There were very few cars driving around but tons of Cubans strewn about, lying around on benches, chit chatting the night away while us wide-eyed Americans were approached by touts trying to swindle some of our money.
+</p>
+<p>
+ Aside: Touts are very friendly, usually speak enough English to draw you into a conversation, and eventually reveal in some form of another that there is a money interest rooted into this interaction.  The black market in Cuba is the only outlet to get ahead of the game touts and street hustlers can be very suave and persuading in their ways.  Anyway, we soon found ourselves in La Floridita, an almost 200 year old bar that is the "Cradle of the Daiquiri" and infamous for being Ernest Hemingway's old haunt.  After going out for just 1 drink, we were quickly absorbed in the live Cuban Son playing from the finely tuned house band. We soon began to count the straws on the mahogany bar staffed by clean cut Cubans donning red sports jackets. 
+ </p>
+
+<p> Cigars rolled out, mojitos went down, and new memories were being created as the unbelievably smooth Havana Club Rum ran past our gums.  Completely forgetting about dinner we closed down the bar and followed the sound of music about 1 block away.  A massive bouncer was guarding the door to a dive bar with soulful Cuban music blasting out of the open windows. We were soon swept into the saloon style doors and into a room full of bright white fluorescent lighting, salsa dancing, and a live band of about 12 musicians creating beauty on beaten down instruments.  They say that music flows like a river through us in Cuba and by the end of the night I felt like I had figured out exactly how the universe worked in this unbelievable corner of the world.  
+</p>
+
+<p>All questions immediately had answers and I felt absorbed into the frequency this city was creating. The rum probably had a lot to do with this.   I remember feeling something more than just being, that I somehow found a secret grass covered door and tapped into the power grid of the planet and began existing within it's flow.  When the music stopped we found our way back to our Casa, with the help of my internal GPS system and about 8 mojitos.
+</p>
+<p>
+ We slept hard that night, and didn't wake till nearly 11AM.  The whole understanding of Cuba in it's entirety had faded away into the brutal reality of a hangover in Habana.
+ </p>-->
+ <div id="books">
+ <a href="#" name="books"></a>
+ <h1>Books</h1>
+ <p>Below are some of the books I've read recently - and some of the ones on my bookshelf waiting to be read.
+ Please click on each one to learn more. My daily commute to work is by train, instead of playing games on my phone (which most people do) or watching movies on a very expensive iPad, I thought I would rather spend the 45 minutes it takes to get to work reading an old fashion physical books. In the last year alone, I have read about 10 interesting books. Unfortunately, I didn't keep a list of those books (which is a big shame). But that has now changed as intent on using this page to compile the list of each book as I read them.</p>
+
+<p>On more thing though - this books below comprise of both technical and fictional books. That's because I read the technical ones at home while chillaxing with the fictional stuff on the train. I thought of buying myself an iPad a few months ago, but the thought of spending even more time on a computer after work was enough to discourage me.</a>
+
+<p>
+Anyway, here are the books.
+</p>
+ <a href="http://www.amazon.com/Programming-Go-Creating-Applications-Developers/dp/0321774639?tag=3322-20"><img src="http://my.safaribooksonline.com/static/201208-6705-my/images/9780132764100/9780132764100_s.jpg" width="115" height="150" id="1" class="details_images" alt="Programming in Go"></a>
+	<a href="http://www.amazon.com/Outsmarting-Social-Media-Profiting-Friendship/dp/0789749394?tag=3322-20"><img src="http://www.quepublishing.com/ShowCover.aspx?isbn=0789749394&type=f" width="115" height="150" id="2" class="details_images" alt="Outsmarting Social media"></a>
+<a href="http://www.amazon.com/Exploring-Everyday-Things-Ruby-Learning/dp/1449315151?tag=3322-20"><img src="http://akamaicovers.oreilly.com/images/0636920022626/cat.gif" width="115" height="150" id="3" class="details_images" alt="First Book"></a>
+<a href="http://www.amazon.com/Introducing-Regular-Expressions-Michael-Fitzgerald/dp/1449392687?tag=3322-20"><img src="http://akamaicovers.oreilly.com/images/0636920012337/cat.gif" width="115" height="150" id="4" class="details_images" alt="First Book"></a>
+<a href="http://www.amazon.com/Cypress-House-Michael-Koryta/dp/0316053694?tag=3322-20"><img src="http://photo.goodreads.com/books/1344264226l/8585317.jpg" width="115" height="150" id="5" class="details_images" alt="The Cypress House"></a>
+<a href="http://www.amazon.com/Fifth-Witness-Lincoln-Laywer/dp/B009D8RJR2?tag=3322-20"><img src="http://www.michaelconnelly.com/wp-content/files_mf/cache/th_196fed19a57c6bc2e3b62660cdf2abbd_TheFifthWitnessUKMM1.jpg" width="115" height="150" id="6" class="details_images" alt="The Fifth Witness"></a>
+
+<a href="http://www.amazon.com/Salems-Lot-Stephen-King/dp/0307743675?tag=3322-20"><img src="http://photo.goodreads.com/books/1327891565l/11590.jpg" width="115" height="150" id="7" class="details_images" alt="Salem's Lot"></a>
+
+<a href="http://www.amazon.com/Reaper-Steve-Dunne/dp/1905886500?tag=3322-20"><img src="http://photo.goodreads.com/books/1344677145l/6620831.jpg" width="115" height="150" id="8" class="details_images" alt="The Reaper"></a>
+
+<a href="http://www.amazon.com/gp/product/1847379044?tag=3322-20"><img src="http://books.google.com/books?id=XOO3YgEACAAJ&printsec=frontcover&img=1&zoom=1&l=220" width="115" height="150" id="9" class="details_images" alt="The Obelisk"></a>
+
+<a href="http://www.amazon.com/Mr-Shivers-Robert-Jackson-Bennett/dp/B005SN44HE?tag=3322-20"><img src="http://photo.goodreads.com/books/1275619505l/6433882.jpg" width="115" height="150" id="10" class="details_images" alt="Mr Shivers"></a>
+
+<a href="http://www.amazon.com/Rupture-Signed-dated-lined-Simon/dp/0330511637/tag=3322-20"><img src="http://kimbofo.typepad.com/.a/6a00d83451bcff69e20120a7ca9086970b-300wi" width="115" height="150" id="11" class="details_images" alt="Rupture"></a>
+	
+<a href="http://www.amazon.com/Emperors-bonus-short-Balkan-Escape/dp/0345505506?tag=3322-20">	<img src="http://photo.goodreads.com/books/1320410873l/7840156.jpg" width="115" height="150" id="12" class="details_images" alt="The Emperor's Tomb"></a>
+
+<a href="http://www.amazon.com/Dreams-Die-John-Ajvide-Lindqvist/dp/0857385496?tag=3322-20"><img src="http://www.waterstones.com/wat/images/nbd/m/978085/738/9780857385499.jpg" width="115" height="150" id="13" class="details_images" alt="Let the Old Dreams Die"></a>
+
+<a href="http://www.amazon.com/Who-Pays-Piper-Mackenzie-Smith/dp/0099576767?tag=3322-20">   <img src="http://www.whopaysthepiper.co.uk/wp-content/themes/theme858/images/the-book.jpg" width="115" height="150" id="14" class="details_images" alt="Who Pays The Piper"></a>
+
+<a href="http://www.amazon.com/gp/product/0596005954?ie=UTF8&tag=3322-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0596005954"><img src="http://www.linuxcommand.org/images/41cXtkjK2GL._SL160_.jpg" width="115" height="150" id="15" class="details_images" alt="Classic Shell Scripting"></a>
+
+<a href="http://www.amazon.com/I-Michael-Bennett-James-Patterson/dp/0316097462?tag=3322-20"><img src="http://d.gr-assets.com/books/1348690295l/13037558.jpg" width="115" height="150" id="16" class="details_images" alt="I, Michael Bennett"></a>
+
+<a href="http://www.amazon.com/Private-Games-James-Patterson/dp/1455513024?tag=3322-20"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZfnptzie_uJxQ-dkYdWTRzBsA0WDUU1ILjsIGOs_xkH9Q4OcKojxxG4" width="115" height="150" id="17" class="details_images" alt="Private Games"></a>
+
+<a href="http://www.amazon.com/Regulators-Richard-Bachman/dp/0451191013?tag=3322-20"><img src="http://d.gr-assets.com/books/1344185614l/10596.jpg" width="115" height="150" id="18" class="details_images" alt="The Regulator"></a>
+
+
+<a href="http://www.amazon.com/Life-Expectancy-Novel-Dean-Koontz/dp/0345533380?tag=3322-20"><img src="http://d.gr-assets.com/books/1348610930l/959353.jpg" width="115" height="150" id="19" class="details_images" alt="Life Expectancy"></a>
+
+<a href="http://www.amazon.com/Highroad-Hell-Michael-Asher/dp/0141047216?tag=3322-20"><img src="http://bks3.books.google.co.uk/books?id=ixcDrOOZkL4C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE7247y3vtyWm51UvneiEpCDVDuyOYlLHBpZyppFgf-NWD_gnayCCOsf-DiQI5YLxbu3jKG7z2_56g3K6MTFZYWsMpj-iETSU-QNw022J4bDQdOfEIMpK_5MmiURcwvVlX-bZcFSK" width="115" height="150" id="20" class="details_images" alt="High Road to Hell"></a>
+
+<a href="http://www.amazon.com/Calico-Joe-John-Grisham/dp/0385536070?tag=3322-20"><img src="http://ecx.images-amazon.com/images/I/51Q5qVCbIZL._SY346_PJlook-inside-v2,TopRight,1,0_SH20_.jpg" width="115" height="150" id="21" class="details_images" alt="Calico Joe"></a>
+
+
+	<div class="details" id="details_1">
+		Programming in Go!
+    </div> 
+    <div class="details" id="details_2">
+       Outsmarting Social Media
+   </div> 
+    <div class="details" id="details_3">
+      Exploring Everyday Things with R and Ruby
+    </div> 
+	
+	<div class="details" id="details_4">
+     Regular Expressions
+    </div> 
+	
+	<div class="details" id="details_5">
+     The Cypress House
+    </div> 
+	
+	<div class="details" id="details_6">
+     The Fifth Witness
+    </div> 
+
+	<div class="details" id="details_7">
+    Salem's Lot
+    </div> 
+	<div class="details" id="details_8">
+    The Reaper
+    </div> 
+
+	<div class="details" id="details_9">
+    The Obelisk
+    </div> 
+
+	<div class="details" id="details_10">
+    Mr Shivers
+    </div> 
+
+	<div class="details" id="details_11">
+    Rupture
+    </div> 
+	
+	<div class="details" id="details_12">
+    The Emperor's Tomb
+    </div> 
+
+	<div class="details" id="details_13">
+    Let the Old Dreams Die
+    </div> 
+
+   <div class="details" id="details_14">
+    Who Pays The Piper
+    </div> 
+
+ <div class="details" id="details_15">
+Classic Shell Scripting
+ </div>
+
+ <div class="details" id="details_16">
+I, Michael Bennett
+ </div>
+ <div class="details" id="details_17">
+Private Games
+ </div>
+
+ <div class="details" id="details_18">
+The Regulators
+ </div>
+
+ <div class="details" id="details_19">
+Life Expectancy
+ </div>
+
+ <div class="details" id="details_20">
+High Road to Hell
+ </div>
+
+ <div class="details" id="details_21">
+Calico Joe
+ </div>
+
+</div>
+<div id="contact">
+<a href="#" name="contact"></a>
+</div>
+
+ <h1>Contact</h1>
+<p>You can call me anything, but you can't call me hard to find because I've been known to be reachable 24/7. If you are on Twitter, a quick mention will automatically send a text message to my phone so I hardly miss any attemtp to <a href="http://twitter.com/onyxtic">reach me on Twitter</a>.</p>
+<p>If you prefer, the old fashion email is still very handy. I can also be reached by sending an email this address or simply fill out the contact form below.</p>
+
+<input type="hidden" name="IL_IN_TAG" value="2"/>
+
+<form class="form">  
+  
+    <p class="name">  
+	    <label for="name">Name</label>  
+        <input type="text" name="name" id="name" />         
+    </p>  
+  
+    <p class="email">  
+		<label for="email">E-mail</label>  
+        <input type="text" name="email" id="email" />          
+    </p>  
+  
+    <p class="web">  
+	    <label for="web">Website</label>  
+        <input type="text" name="web" id="web" />  
+    </p>  
+  
+    <p class="text">  
+        <textarea name="text" cols="25" rows="5" placeholder="Enter message here" ></textarea>  
+    </p>  
+  
+    <p class="submit">  
+        <input type="submit" value="Send message" />  
+    </p>  
+  
+</form>
+
+
+<div id="footer">
+    <p>
+	<hr />
+       Copyright &copy; 2013 Evans.
+<br />{ title : 'evans page', options: 'my own, not my employer\'s' }
+	</p>   
+</div>
+</div>
+<!--infoinks-->
+<script type="text/javascript">
+    var infolink_pid = 18537;
+    var infolink_wsid = 1;
+</script>
+<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+
+<!--Google Analytics-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3620646-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
